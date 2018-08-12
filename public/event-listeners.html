@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Course Review</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/prism.css">
+
+  <style>
+    textarea { width: 100%; min-height: 75px; font-size: 14px; }
+    p code { font-size: 14px; }
+    .keylogger {
+      background: url('https://i.imgur.com/5VROPD6.png');
+      background-color: #ddd;
+      background-size: 800px auto;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      padding: 60px 20px 20px 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <h2>KeyLogginator</h2>
+    
+    <p>Demonstrate your ability to use the DOM event listener API to respond to user events by implementing a keylogger on the text area in the fake browser below.</p>
+
+    <p>On every keystroke (keypress event), write an entry to the logs that is formatted like so: </p>
+
+    <pre><code class="language-plaintext">[Key] | [KeyCode] | "[FullText]"</code></pre>
+
+    <p>For example, if you type <code>Hello!</code>, the logs should show:</p>
+
+    <pre data-src="/snippets/event-listeners-log.txt"><code class="language-plaintext">
+
+    </code></pre>
+
+    <div class="keylogger">
+
+      <h3>TextArea:</h3>
+      <textarea id="user-input"></textarea>
+  
+      <h3>Logs:</h3>
+      <pre><code class="language-plaintext logs" id="logger"></code></pre>
+
+    </div>
+
+    <h3>Your Code:</h3>
+
+    <pre data-src="/snippets/event-listeners.js"><code class="language-javascript"></code></pre>
+    <script src="/snippets/event-listeners.js"></script>
+
+    <hr>
+    <a href="/">Back</a>
+  </div>
+  <script src="/js/prism.js"></script>
+</body>
+
+</html>
